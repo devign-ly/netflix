@@ -3,7 +3,7 @@ import styled from 'styled-components/macro';
 export const Button = styled.button`
   padding: var(--space-10);
   text-align: center;
-  min-width: 100px;
+  min-width: 80px;
   color: #fff;
   background: #e50914;
   font-size: var(--text-md);
@@ -24,6 +24,6 @@ export const Button = styled.button`
     opacity: 0.5;
   }
   &:hover {
-    background: #f40612;
+    background: #0538f5;
   }
 `;
