@@ -14,13 +14,15 @@ export const Container = styled.div`
 `;
 
 export const Input = styled.input`
+
   font-family: var(--font-body);
   max-width: 450px;
   width: 100%;
   border: 0;
-  padding: 10px;
+  padding: 10px 10px 10px 20px;
   height: 70px;
   box-sizing: border-box;
+  font-size: 24px;
 `;
 
 export const Break = styled.div`

@@ -12,11 +12,11 @@ export const Title = styled.h1`
   color: white;
   max-width: 640px;
   font-family: var(--font-title);
-  font-size: var(--text-4xl);
+  font-size: var(--space-100);
   font-weight: var(--font-semibold);
   margin: auto;
   @media (max-width: 600px) {
-    font-size: var(--text-2xl);
+    font-size: var(--text-3xl);
   }
 `;
 
