@@ -70,7 +70,7 @@ export const Input = styled.input`
   height: 50px;
   line-height: 50px;
   padding: 5px 20px;
-  margin-bottom: var(--space-20);
+  margin-bottom: var(--space-40);
   font-family: var(--font-body);
   &:last-of-type {
     margin-bottom: var(--space-40);
