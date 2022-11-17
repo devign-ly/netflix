@@ -134,9 +134,12 @@ export const FeatureText = styled.p`
 `;
 
 export const Feature = styled.div`
+
   display: flex;
   flex-direction: row;
-  background: url(${({ src }) => src});
+  background: url(${({
+  src
+}) => src});
   background-size: contain;
   position: relative;
   height: 360px;
@@ -147,7 +150,8 @@ export const Feature = styled.div`
   @media (max-width: 1000px) {
     height: auto;
     background-size: auto;
-
+    margin: 20px;
+    border: 1px solid silver;
     ${Title} {
       font-size: var(--text-lg);
       line-height: 20px;
@@ -157,6 +161,7 @@ export const Feature = styled.div`
       font-size: 14px;
     }
   }
+
 `;
 
 export const FeatureTitle = styled(Title)`

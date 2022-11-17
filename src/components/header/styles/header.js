@@ -14,10 +14,9 @@ export const Background = styled.div`
 export const Container = styled.div`
   display: flex;
   margin: 0 56px;
-  height: 100px;
-  justify-content: space-between;
+  height: 150px;
+  justify-content: center;
   align-items: center;
-
   @media (max-width: 1000px) {
     margin: 0 30px;
   }
@@ -190,10 +189,9 @@ export const Text = styled.p`
 `;
 
 export const Logo = styled.img`
-  height: 36px;
-  width: 134px;
+  height: 70px;
+  width: 200px;
   margin-right: var(--space-40);
-
   @media (min-width: 1449px) {
     height: 45px;
     width: 167px;
