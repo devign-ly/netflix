@@ -20,7 +20,9 @@ const Ghostbox = ({children}) => {
 	if (phantom) {
 		// TODO: figure out a way to read devign.json, if the user sets
 		//       phantom_dir then we want to use that instead
-    const ComponentObj = loadable(() => import(`${phantomBase}${phantom}.js`));
+    // XXX: change "jsx" to "js" and watch it break the project, because tests can no longer
+    //      resolve ""../../components"  ... yup, seriously. even if no one uses ComponetObj!
+    const ComponentObj = loadable(() => import(`${phantomBase}${phantom}.jsx`));
     return <ComponentObj/>;
 	}
 	return  children;
