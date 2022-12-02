@@ -13,8 +13,8 @@ export function FooterColumn({ children }) {
   return <Column>{children}</Column>;
 }
 
-export function FooterLink({ children }) {
-  return <Link>{children}</Link>;
+export function FooterLink({ href, children }) {
+  return <Link href={href}>{children}</Link>;
 }
 
 export function FooterTitle({ children }) {
