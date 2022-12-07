@@ -13,10 +13,19 @@ Devign.init();
 
 const phantomBase = `./phantoms/`;
 
-const Ghostbox = ({children}) => {
-	const params = new URLSearchParams(window.location.search);
-	const phantom = params.get('phantom');
+const Ghostbox = ({ children }) => {
+  const params = new URLSearchParams(window.location.search);
+  const branchName = params.get('phantomBranch');
+  const phantomName = params.get('phantomName');
 
+  if (branchName && phantomName) {
+    const Phantom = import(`../.devign/${branchName}/phantoms/${phantomName}.jsx`);
+    console.log('Phantom', Phantom);
+    return <Phantom />;
+  }
+  return children;
+
+  /*
 	if (phantom) {
 		// TODO: figure out a way to read devign.json, if the user sets
 		//       phantom_dir then we want to use that instead (worst case we can pass it in as url param)
@@ -27,15 +36,15 @@ const Ghostbox = ({children}) => {
     return <ComponentObj/>;
 	}
 	return  children;
+  */
 };
-
 
 render(
   <React.StrictMode>
     <AuthContext.Provider value={{ auth }}>
-      <GlobalStyles/>
+      <GlobalStyles />
       <Ghostbox>
-      <App />
+        <App />
       </Ghostbox>
     </AuthContext.Provider>
   </React.StrictMode>,
