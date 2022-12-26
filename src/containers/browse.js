@@ -80,7 +80,7 @@ export function BrowseContainer({ slides }) {
   }
 
   return (
-    <div>
+    <>
       {loading ? <Loading src={profile.avatar} /> : <LoadingReleaseBody />}
 
       <Header src={profile.header.image} dontShowOnSmallViewPort>
@@ -145,6 +145,6 @@ export function BrowseContainer({ slides }) {
         ))}
       </CardGroup>
       <FooterContainer />
-    </div>
+    </>
   );
 }
