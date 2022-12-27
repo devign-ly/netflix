@@ -14,7 +14,9 @@ render(
   <React.StrictMode>
     <AuthContext.Provider value={{ auth }}>
       <GlobalStyles />
-      <App />
+      <Devign.Ghostbox getPhantom={(branch, phantom) => import(`./.devign/${branch}/phantoms/${phantom}.jsx`)}>
+        <App />
+      </Devign.Ghostbox>
     </AuthContext.Provider>
   </React.StrictMode>,
   document.getElementById('root')
