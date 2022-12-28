@@ -26,14 +26,20 @@ export const List = styled.ul`
 `;
 
 export const Name = styled.p`
+
   color: #808080;
   text-overflow: ellipsis;
   font-size: var(--text-md);
   font-family: var(--font-body);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
   &:hover {
     font-weight: var(--font-bold);
     color: #e5e5e5;
   }
+
 `;
 
 export const Picture = styled.img`
@@ -50,16 +56,14 @@ export const Item = styled.li`
   list-style-type: none;
   text-align: center;
   margin-right: var(--space-30);
-
+  flex-basis: 100%;
   &:hover > ${Picture} {
     border: 3px solid white;
   }
-
   &:hover ${Name} {
     font-weight: var(--font-bold);
     color: white;
   }
-
   &:last-of-type {
     margin-right: var(--space-0);
   }
