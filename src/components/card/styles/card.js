@@ -134,16 +134,43 @@ export const FeatureText = styled.p`
 `;
 
 export const Feature = styled.div`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   display: flex;
   flex-direction: row;
-  background: url(${({ src }) => src});
+  background: url(${({
+  src
+}) => src});
   background-size: contain;
   position: relative;
   height: 360px;
   background-position-x: right;
   background-repeat: no-repeat;
   background-color: black;
-
+margin: 5px 10px 0px 10px;
+filter: drop-shadow(1mm 1mm 2mm #666666);
+z-index: 100;
   @media (max-width: 1000px) {
     height: auto;
     background-size: auto;
@@ -157,6 +184,28 @@ export const Feature = styled.div`
       font-size: 14px;
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 `;
 
 export const FeatureTitle = styled(Title)`
