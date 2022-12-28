@@ -4,10 +4,9 @@ import styled from "styled-components";
 const Overlay = styled.div`
   width: 100%;
   height: 100vh;
-  background-color: #4e4d4d88;
-  position: absolute;
+  background-color: #79797988;
+  position: fixed;
   top: 0px;
-  z-index: 99;
 `;
 export const FeatureContext = createContext();
 export default function Card({

@@ -135,6 +135,7 @@ export const FeatureText = styled.p`
 
 export const Feature = styled.div`
 
+
   display: flex;
   flex-direction: row;
   background: url(${({
@@ -146,7 +147,6 @@ export const Feature = styled.div`
   background-position-x: right;
   background-repeat: no-repeat;
   background-color: black;
-z-index: 100;
   @media (max-width: 1000px) {
     height: auto;
     background-size: auto;
@@ -160,6 +160,7 @@ z-index: 100;
       font-size: 14px;
     }
   }
+
 
 
 
