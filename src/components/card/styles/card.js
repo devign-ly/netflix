@@ -135,28 +135,6 @@ export const FeatureText = styled.p`
 
 export const Feature = styled.div`
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   display: flex;
   flex-direction: row;
   background: url(${({
@@ -168,8 +146,6 @@ export const Feature = styled.div`
   background-position-x: right;
   background-repeat: no-repeat;
   background-color: black;
-margin: 5px 10px 0px 10px;
-filter: drop-shadow(1mm 1mm 2mm #666666);
 z-index: 100;
   @media (max-width: 1000px) {
     height: auto;
@@ -184,6 +160,7 @@ z-index: 100;
       font-size: 14px;
     }
   }
+
 
 
 

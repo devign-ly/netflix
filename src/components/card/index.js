@@ -1,86 +1,90 @@
 import React, { useState, useContext, createContext } from 'react';
-
-import {
-  Container,
-  Group,
-  Title,
-  SubTitle,
-  Text,
-  Feature,
-  FeatureTitle,
-  FeatureText,
-  FeatureClose,
-  Maturity,
-  Content,
-  Meta,
-  Entities,
-  Item,
-  Image,
-} from './styles/card';
-
+import { Container, Group, Title, SubTitle, Text, Feature, FeatureTitle, FeatureText, FeatureClose, Maturity, Content, Meta, Entities, Item, Image } from './styles/card';
+import styled from "styled-components";
+const Overlay = styled.div`
+  width: 100%;
+  height: 100vh;
+  background-color: #4e4d4d88;
+  position: absolute;
+  top: 0px;
+  z-index: 99;
+`;
 export const FeatureContext = createContext();
-
-export default function Card({ children }) {
+export default function Card({
+  children
+}) {
   const [showFeature, setShowFeature] = useState(false);
   const [itemFeature, setItemFeature] = useState({});
-
-  return (
-    <FeatureContext.Provider value={{ showFeature, setShowFeature, itemFeature, setItemFeature }}>
+  return <FeatureContext.Provider value={{
+    showFeature,
+    setShowFeature,
+    itemFeature,
+    setItemFeature
+  }}>
       <Container>{children}</Container>
-    </FeatureContext.Provider>
-  );
+    </FeatureContext.Provider>;
 }
-
-export function CardGroup({ children }) {
+export function CardGroup({
+  children
+}) {
   return <Group>{children}</Group>;
 }
-
-export function CardTitle({ children }) {
+export function CardTitle({
+  children
+}) {
   return <Title>{children}</Title>;
 }
-
-export function CardSubTitle({ children }) {
+export function CardSubTitle({
+  children
+}) {
   return <SubTitle>{children}</SubTitle>;
 }
-
-export function CardText({ children }) {
+export function CardText({
+  children
+}) {
   return <Text>{children}</Text>;
 }
-
-export function CardEntities({ children }) {
+export function CardEntities({
+  children
+}) {
   return <Entities>{children}</Entities>;
 }
-
-export function CardMeta({ children }) {
+export function CardMeta({
+  children
+}) {
   return <Meta>{children}</Meta>;
 }
-
-export function CardItem({ item, children }) {
-  const { setShowFeature, setItemFeature } = useContext(FeatureContext);
-
-  return (
-    <Item
-      onClick={() => {
-        setItemFeature(item);
-        setShowFeature(true);
-      }}
-    >
+export function CardItem({
+  item,
+  children
+}) {
+  const {
+    setShowFeature,
+    setItemFeature
+  } = useContext(FeatureContext);
+  return <Item onClick={() => {
+    setItemFeature(item);
+    setShowFeature(true);
+  }}>
       {children}
-    </Item>
-  );
+    </Item>;
 }
-
-export function CardImage({ src }) {
+export function CardImage({
+  src
+}) {
   return <Image src={src} />;
 }
-
-export function CardFeature({ children, category }) {
-  const { showFeature, itemFeature, setShowFeature } = useContext(FeatureContext);
-
+export function CardFeature({
+  children,
+  category
+}) {
+  const {
+    showFeature,
+    itemFeature,
+    setShowFeature
+  } = useContext(FeatureContext);
   if (!showFeature) return null;
-
-  return (
-    <Feature src={`/images/${category}/${itemFeature.genre}/${itemFeature.slug}/large.jpg`}>
+  return <div><Overlay></Overlay><Feature src={`/images/${category}/${itemFeature.genre}/${itemFeature.slug}/large.jpg`}>
       <Content>
         <FeatureTitle>{itemFeature.title}</FeatureTitle>
         <FeatureText>{itemFeature.description}</FeatureText>
@@ -97,6 +101,5 @@ export function CardFeature({ children, category }) {
 
         {children}
       </Content>
-    </Feature>
-  );
+    </Feature></div>;
 }
