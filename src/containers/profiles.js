@@ -16,7 +16,7 @@ export function SelectProfileContainer({
   return <>
       <Header bg={false}>
         <HeaderFrame>
-          <HeaderCenter><HeaderLogo to={ROUTES.HOME} src={logo} alt="Netflix" /></HeaderCenter>
+          <HeaderCenter><HeaderLogo to={ROUTES.HOME} src={logo} alt="Netfl3ix" /></HeaderCenter>
         </HeaderFrame>
       </Header>
 
@@ -27,7 +27,18 @@ export function SelectProfileContainer({
               <ProfilesPicture src={profile.avatar} />
               <ProfilesName>{profile.name}</ProfilesName>
             </ProfilesUser>)}
-        </ProfilesList>
+        </ProfilesList><ProfilesList>
+          
+        <ProfilesUser onClick={() => alert("onClick")} data-testid="user-profile">
+              <ProfilesPicture src={2} />
+              <ProfilesName>Just Ordered Us</ProfilesName>
+            </ProfilesUser><ProfilesUser onClick={() => alert("onClick")} data-testid="user-profile">
+              <ProfilesPicture src={2} />
+              <ProfilesName>My very elegant mother</ProfilesName>
+            </ProfilesUser><ProfilesUser onClick={() => alert("onClick")} data-testid="user-profile">
+              <ProfilesPicture src={2} />
+              <ProfilesName>Pizza</ProfilesName>
+            </ProfilesUser></ProfilesList>
       </Profiles>
     </>;
 }

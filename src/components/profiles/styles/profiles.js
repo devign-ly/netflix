@@ -11,7 +11,7 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
   width: 100%;
-  color: #fff;
+  color: #59ceee;
   font-family: var(--font-title);
   font-size: var(--text-3xl);
   text-align: center;
@@ -26,20 +26,17 @@ export const List = styled.ul`
 `;
 
 export const Name = styled.p`
-
   color: #808080;
   text-overflow: ellipsis;
   font-size: var(--text-md);
   font-family: var(--font-body);
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
   max-width: 150px;
   &:hover {
     font-weight: var(--font-bold);
     color: #e5e5e5;
   }
-
 `;
 
 export const Picture = styled.img`
