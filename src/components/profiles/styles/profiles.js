@@ -16,7 +16,6 @@ export const Title = styled.h1`
   font-size: var(--text-3xl);
   text-align: center;
   font-weight: var(--font-semibold);
-  font-weight: var(--font-bold);
 `;
 
 export const List = styled.ul`
@@ -30,6 +29,7 @@ export const Name = styled.p`
   font-weight: var(--font-bold);
   color: #e5e5e5;
   white-space: nowrap;
+  font-family: var(--font-title);
 `;
 
 export const Picture = styled.img`
