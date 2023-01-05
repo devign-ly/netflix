@@ -27,18 +27,7 @@ export function SelectProfileContainer({
               <ProfilesPicture src={profile.avatar} />
               <ProfilesName>{profile.name}</ProfilesName>
             </ProfilesUser>)}
-        </ProfilesList><ProfilesList>
-          
-        <ProfilesUser onClick={() => alert("onClick")} data-testid="user-profile">
-              <ProfilesPicture src={2} />
-              <ProfilesName>Just Ordered Us</ProfilesName>
-            </ProfilesUser><ProfilesUser onClick={() => alert("onClick")} data-testid="user-profile">
-              <ProfilesPicture src={2} />
-              <ProfilesName>My very elegant mother</ProfilesName>
-            </ProfilesUser><ProfilesUser onClick={() => alert("onClick")} data-testid="user-profile">
-              <ProfilesPicture src={2} />
-              <ProfilesName>Pizza</ProfilesName>
-            </ProfilesUser></ProfilesList>
+        </ProfilesList>
       </Profiles>
     </>;
 }

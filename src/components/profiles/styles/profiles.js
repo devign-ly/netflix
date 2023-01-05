@@ -16,6 +16,7 @@ export const Title = styled.h1`
   font-size: var(--text-3xl);
   text-align: center;
   font-weight: var(--font-semibold);
+  font-weight: var(--font-bold);
 `;
 
 export const List = styled.ul`
@@ -26,17 +27,9 @@ export const List = styled.ul`
 `;
 
 export const Name = styled.p`
-  color: #808080;
-  text-overflow: ellipsis;
-  font-size: var(--text-md);
-  font-family: var(--font-body);
+  font-weight: var(--font-bold);
+  color: #e5e5e5;
   white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 150px;
-  &:hover {
-    font-weight: var(--font-bold);
-    color: #e5e5e5;
-  }
 `;
 
 export const Picture = styled.img`
