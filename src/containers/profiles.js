@@ -15,13 +15,13 @@ export function SelectProfileContainer({
 }) {
   return <>
       <Header bg={false}>
-        <HeaderFrame>
+        <ProfilesTitle></ProfilesTitle><HeaderFrame>
           <HeaderCenter><HeaderLogo to={ROUTES.HOME} src={logo} alt="Netfl3ix" /></HeaderCenter>
         </HeaderFrame>
       </Header>
 
       <Profiles>
-        <ProfilesTitle>Who's watching?</ProfilesTitle>
+        <ProfilesTitle>Who's watching?new text</ProfilesTitle>
         <ProfilesList>
           {profiles.map(profile => <ProfilesUser key={profile.name} onClick={() => setProfile(profile)} data-testid="user-profile">
               <ProfilesPicture src={profile.avatar} />

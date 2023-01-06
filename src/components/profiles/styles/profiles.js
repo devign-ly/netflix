@@ -11,9 +11,9 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
   width: 100%;
-  color: #59ceee;
+  color: #e9eeca;
   font-family: var(--font-title);
-  font-size: var(--text-3xl);
+  font-size: var(--text-xl);
   text-align: center;
   font-weight: var(--font-semibold);
 `;
@@ -26,7 +26,7 @@ export const List = styled.ul`
 `;
 
 export const Name = styled.p`
-  font-weight: var(--font-bold);
+  font-weight: var(--font-semibold);
   color: #e5e5e5;
   white-space: nowrap;
   font-family: var(--font-title);

@@ -36,7 +36,7 @@ export default function SignIn() {
 
   return (
     <>
-      <HeaderContainer>
+      <HeaderContainer border="2px solid blue">
         <Form>
           <FormTitle>Sign In</FormTitle>
           {error && <FormError data-testid="error">{error}</FormError>}
