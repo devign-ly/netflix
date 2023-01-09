@@ -15,7 +15,7 @@ export function SelectProfileContainer({
 }) {
   return <>
       <Header bg={false}>
-        <ProfilesTitle></ProfilesTitle><HeaderFrame>
+        <HeaderFrame>
           <HeaderCenter><HeaderLogo to={ROUTES.HOME} src={logo} alt="Netfl3ix" /></HeaderCenter>
         </HeaderFrame>
       </Header>
