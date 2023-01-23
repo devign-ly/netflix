@@ -14,7 +14,7 @@ render(
   <React.StrictMode>
     <AuthContext.Provider value={{ auth }}>
       <GlobalStyles />
-      <Devign.Ghostbox getPhantom={(branch, phantom) => import(`./.devign/${branch}/phantoms/${phantom}.jsx`)}>
+      <Devign.Ghostbox getPhantom={(filename) => import(`./.devign/${filename}`)}>
         <App />
       </Devign.Ghostbox>
     </AuthContext.Provider>
