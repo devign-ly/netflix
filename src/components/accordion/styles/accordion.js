@@ -23,21 +23,19 @@ export const Title = styled.h1`
   line-height: 1.1;
   margin-top: var(--space-0);
   margin-bottom: 8px;
-  color: white;
+  color: #fff;
   text-align: center;
-
   @media (max-width: 600px) {
     font-size: var(--text-2xl);
   }
 `;
 
 export const Item = styled.div`
-  color: white;
+  color: #fff;
   margin: auto;
   margin-bottom: var(--space-10);
   max-width: 728px;
   width: 100%;
-
   &:first-of-type {
     margin-top: 3em;
   }

@@ -9,7 +9,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-  color: white;
+  color: #FFF;
   max-width: 640px;
   font-family: var(--font-title);
   font-size: var(--text-4xl);
@@ -21,12 +21,11 @@ export const Title = styled.h1`
 `;
 
 export const SubTitle = styled.h2`
-  color: white;
+  color: #fff;
   font-family: var(--font-body);
   font-size: var(--text-xl);
   font-weight: var(--font-regular);
   margin: 16px auto;
-
   @media (max-width: 600px) {
     font-size: 18px;
   }

@@ -4,9 +4,9 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   height: 100%;
-  margin-top: var(--space-20);
   flex-wrap: wrap;
-
+  margin: auto;
+  margin-top: var(--space-20);
   @media (max-width: 1000px) {
     flex-direction: column;
     align-items: center;
@@ -62,7 +62,7 @@ export const Button = styled.button`
 export const Text = styled.p`
   font-family: var(--font-body);
   font-size: var(--text-lg);
-  color: white;
+  color: #fff;
   text-align: center;
   @media (max-width: 600px) {
     font-size: var(--text-md);
