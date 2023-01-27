@@ -22,8 +22,7 @@ export default function Home() {
         </Feature>
       </HeaderContainer>
 
-      <JumbotronContainer />
-      <FaqsContainer />
+      <FaqsContainer /><JumbotronContainer />
       <FooterContainer />
     </div>
   );
