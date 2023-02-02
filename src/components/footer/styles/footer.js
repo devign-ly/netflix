@@ -33,6 +33,7 @@ export const Link = styled.a`
   margin-bottom: var(--space-20);
   font-size: var(--text-sm);
   text-decoration: none;
+  font-family: var(--font-body);
 `;
 
 export const Title = styled.p`
