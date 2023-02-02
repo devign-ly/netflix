@@ -1,4 +1,6 @@
 import React from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import * as Devign from 'devigner';
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import Home from './pages/home';
 import Browse from './pages/browse';
@@ -13,6 +15,7 @@ export function App() {
 
   return (
     <Router>
+      <Devign.Ghostbox getPhantom={(filename) => import(`./.devign/${filename}`)}>
       <Switch>
         <IsUserRedirect user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.SIGN_IN}>
           <SignIn />
@@ -24,6 +27,7 @@ export function App() {
           <Home />
         </IsUserRedirect>
       </Switch>
+      </Devign.Ghostbox>
     </Router>
   );
 }
