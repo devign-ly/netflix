@@ -13,5 +13,6 @@
 	"run": "DISABLE_ESLINT_PLUGIN=true yarn start",
 	"bypass_proxy": true,
 	"main_branch": "main",
+	"run_prettier": true,
 	"meta_dir": "src/.devign"
 }
