@@ -16,17 +16,17 @@ export function App() {
   return (
     <Router>
       <Devign.Ghostbox getPhantom={(filename) => import(`./.devign/${filename}`)}>
-      <Switch>
-        <IsUserRedirect user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.SIGN_IN}>
-          <SignIn />
-        </IsUserRedirect>
-        <ProtectedRoute user={user} path={ROUTES.BROWSE}>
-          <Browse />
-        </ProtectedRoute>
-        <IsUserRedirect user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.HOME}>
-          <Home />
-        </IsUserRedirect>
-      </Switch>
+        <Switch>
+          <IsUserRedirect user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.SIGN_IN}>
+            <SignIn />
+          </IsUserRedirect>
+          <ProtectedRoute user={user} path={ROUTES.BROWSE}>
+            <Browse />
+          </ProtectedRoute>
+          <IsUserRedirect user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.HOME}>
+            <Home />
+          </IsUserRedirect>
+        </Switch>
       </Devign.Ghostbox>
     </Router>
   );
