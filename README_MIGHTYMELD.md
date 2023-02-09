@@ -2,7 +2,7 @@
 
 1. Check out the repo.
 2. `yarn`
-3. `yarn link devigner`
+3. `yarn link mightymeld`
 4. `yarn link babel-plugin-mightymeld`
 5. Start via runner: `./runner.sh -u ../user-servers/netflix`
 
