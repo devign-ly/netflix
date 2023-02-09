@@ -7,5 +7,5 @@
   "run": "DISABLE_ESLINT_PLUGIN=true yarn start",
   "bypass_proxy": true,
   "main_branch": "main",
-  "meta_dir": "src/.devign"
+  "meta_dir": "src/.mightymeld"
 }
