@@ -7,5 +7,7 @@
   "run": "DISABLE_ESLINT_PLUGIN=true yarn start",
   "bypass_proxy": true,
   "main_branch": "main",
-  "meta_dir": "src/.mightymeld"
+  "meta_dir": "src/.mightymeld",
+  "run_prettier": true,
+  "prettier_config": ".prettierrc.json"
 }
