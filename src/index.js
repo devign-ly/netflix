@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import 'normalize.css';
 // eslint-disable-next-line import/no-extraneous-dependencies
-import * as Devign from 'devigner';
+import * as Devign from 'mightymeld';
 import { GlobalStyles } from './global-styles';
 import { App } from './app';
 import { auth } from './lib/auth';
@@ -14,7 +14,7 @@ render(
   <React.StrictMode>
     <AuthContext.Provider value={{ auth }}>
       <GlobalStyles />
-        <App />
+      <App />
     </AuthContext.Provider>
   </React.StrictMode>,
   document.getElementById('root')
