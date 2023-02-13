@@ -15,7 +15,9 @@ export function App() {
 
   return (
     <Router>
-      <MightyMeld.Ghostbox getPhantom={(filename) => import(/* webpackInclude: /\.jsx$/ */ `./.mightymeld/${filename}`)}>
+      <MightyMeld.Ghostbox
+        getPhantom={(filename) => import(/* webpackInclude: /\.jsx$/ */ `./.mightymeld/${filename}`)}
+      >
         <Switch>
           <IsUserRedirect user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.SIGN_IN}>
             <SignIn />
