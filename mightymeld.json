@@ -9,5 +9,6 @@
   "main_branch": "main",
   "meta_dir": "src/.mightymeld",
   "run_prettier": true,
-  "prettier_config": ".prettierrc.json"
+  "prettier_config": ".prettierrc.json",
+  "prefab_dir": "src/prefab"
 }

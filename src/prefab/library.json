@@ -1,0 +1,179 @@
+{
+  "collections": [
+    {
+      "label": "HTML",
+      "prefabs": [
+        {
+          "label": "Fragment",
+          "icon": "fragment",
+          "componentId": "src/.mightymeld/prefab/components/html.jsx:fragment:fragment"
+        },
+        {
+          "label": "div",
+          "icon": "html",
+          "componentId": "src/.mightymeld/prefab/components/html.jsx:div:div"
+        },
+        {
+          "label": "Text",
+          "icon": "text",
+          "componentId": "src/.mightymeld/prefab/components/html.jsx:text:text"
+        },
+        {
+          "label": "Text Span",
+          "icon": "html",
+          "componentId": "src/.mightymeld/prefab/components/html.jsx:text_span:text_span"
+        },
+        {
+          "label": "Heading 1",
+          "icon": "html",
+          "componentId": "src/.mightymeld/prefab/components/html.jsx:h1:h1"
+        },
+        {
+          "label": "Heading 2",
+          "icon": "html",
+          "componentId": "src/.mightymeld/prefab/components/html.jsx:h2:h2"
+        },
+        {
+          "label": "Heading 3",
+          "icon": "html",
+          "componentId": "src/.mightymeld/prefab/components/html.jsx:img:img"
+        },
+        {
+          "label": "Image",
+          "icon": "html",
+          "componentId": "src/.mightymeld/prefab/components/html.jsx:img:img"
+        },
+        {
+          "label": "Flex row",
+          "icon": "html",
+          "componentId": "src/.mightymeld/prefab/components/html.jsx:BasicRow:BasicRow"
+        },
+        {
+          "label": "Flex column",
+          "icon": "html",
+          "componentId": "src/.mightymeld/prefab/components/html.jsx:BasicColumn:BasicColumn"
+        }
+      ]
+    },
+    {
+      "label": "MUI",
+      "prefabs": [
+        {
+          "label": "Alert",
+          "icon": "external",
+          "componentId": "src/.mightymeld/prefab/components/mui.jsx:alert:alert"
+        },
+        {
+          "label": "Autocomplete",
+          "icon": "external",
+          "componentId": "src/.mightymeld/prefab/components/mui.jsx:autocomplete:autocomplete"
+        },
+        {
+          "label": "Avatar - image",
+          "icon": "external",
+          "componentId": "src/.mightymeld/prefab/components/mui.jsx:avatarImage:avatarImage"
+        },
+        {
+          "label": "Avatar - letter",
+          "icon": "external",
+          "componentId": "src/.mightymeld/prefab/components/mui.jsx:avatarLetter:avatarLetter"
+        },
+        {
+          "label": "Backdrop",
+          "icon": "external",
+          "componentId": "src/.mightymeld/prefab/components/mui.jsx:backdrop:backdrop"
+        },
+        {
+          "label": "Box",
+          "icon": "external",
+          "componentId": "src/.mightymeld/prefab/components/mui.jsx:box:box"
+        },
+        {
+          "label": "Breadcrumbs",
+          "icon": "external",
+          "componentId": "src/.mightymeld/prefab/components/mui.jsx:breadcrumbs:breadcrumbs"
+        },
+        {
+          "label": "Button",
+          "icon": "external",
+          "componentId": "src/.mightymeld/prefab/components/mui.jsx:button:button"
+        },
+        {
+          "label": "Card",
+          "icon": "external",
+          "componentId": "src/.mightymeld/prefab/components/mui.jsx:card:card"
+        },
+        {
+          "label": "Container",
+          "icon": "external",
+          "componentId": "src/.mightymeld/prefab/components/mui.jsx:container:container"
+        },
+        {
+          "label": "Dialog",
+          "icon": "external",
+          "componentId": "src/.mightymeld/prefab/components/mui.jsx:dialog:dialog"
+        },
+        {
+          "label": "Floating Action Button",
+          "icon": "external",
+          "componentId": "src/.mightymeld/prefab/components/mui.jsx:fab:fab"
+        },
+        {
+          "label": "Grid",
+          "icon": "external",
+          "componentId": "src/.mightymeld/prefab/components/mui.jsx:grid:grid"
+        },
+        {
+          "label": "Image List",
+          "icon": "external",
+          "componentId": "src/.mightymeld/prefab/components/mui.jsx:imageList:imageList"
+        },
+        {
+          "label": "Paper",
+          "icon": "external",
+          "componentId": "src/.mightymeld/prefab/components/mui.jsx:paper:paper"
+        },
+        {
+          "label": "Progress",
+          "icon": "external",
+          "componentId": "src/.mightymeld/prefab/components/mui.jsx:progress:progress"
+        },
+        {
+          "label": "Rating",
+          "icon": "external",
+          "componentId": "src/.mightymeld/prefab/components/mui.jsx:rating:rating"
+        },
+        {
+          "label": "Switch",
+          "icon": "external",
+          "componentId": "src/.mightymeld/prefab/components/mui.jsx:switch_:switch_"
+        },
+        {
+          "label": "Text Field",
+          "icon": "external",
+          "componentId": "src/.mightymeld/prefab/components/mui.jsx:textField:textField"
+        }
+      ]
+    },
+    {
+      "label": "Actions",
+      "prefabs": [
+        {
+          "label": "Conditional",
+          "icon": "conditional",
+          "componentId": "src/.mightymeld/prefab/components/actions.jsx:BasicRow:BasicRow"
+        },
+        {
+          "label": "Two-way switch",
+          "icon": "ternary",
+          "componentId": "src/.mightymeld/prefab/components/actions.jsx:BasicColumn:BasicColumn"
+        },
+        {
+          "label": "Loop",
+          "icon": "iterator",
+          "componentId": "src/.mightymeld/prefab/components/actions.jsx:BasicColumn:BasicColumn"
+        }
+      ]
+    }
+  ]
+}
