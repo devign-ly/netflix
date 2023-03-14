@@ -25,8 +25,8 @@ export function SelectProfileContainer({ setProfile }) {
         <ProfilesList>
           {profiles.map((profile) => (
             <ProfilesUser key={profile.name} onClick={() => setProfile(profile)} data-testid="user-profile">
-              <ProfilesPicture src={profile.avatar} />
               <ProfilesName>{profile.name}</ProfilesName>
+              <ProfilesPicture src={profile.avatar} />
             </ProfilesUser>
           ))}
         </ProfilesList>
