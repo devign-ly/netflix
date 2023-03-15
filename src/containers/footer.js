@@ -12,7 +12,7 @@ export function FooterContainer() {
           <FooterLink href="#">Investor Relations</FooterLink>
           <FooterLink href="#">Ways to Watch</FooterLink>
           <FooterLink href="#">Corporate Information</FooterLink>
-          <FooterLink href="#">Netflix Originals</FooterLink>
+          <FooterLink href="#">TubeFlix Originals</FooterLink>
         </FooterColumn>
 
         <FooterColumn>
