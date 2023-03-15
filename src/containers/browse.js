@@ -119,7 +119,7 @@ export function BrowseContainer({ slides }) {
           <HeaderPlayButton>Play</HeaderPlayButton>
         </HeaderFeature>
       </Header>
-
+      Welcome, {profile.name}!
       <CardGroup>
         {slideRows.map((slideItem) => (
           <Card key={`${category}-${slideItem.title.toLowerCase()}`}>
