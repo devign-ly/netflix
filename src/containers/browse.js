@@ -33,6 +33,19 @@ import { AuthContext } from '../context/auth';
 import { SelectProfileContainer } from './profiles';
 import { FooterContainer } from './footer';
 import profiles from '../data/profiles.json';
+import styled from 'styled-components';
+const WelcomeMessage = styled.div`
+  font-family: var(--font-title);
+  font-weight: var(--font-semibold);
+  font-size: var(--text-2xl);
+  margin-top: var(--space-20);
+  margin-left: var(--space-30);
+  color: #f6f6f6;
+  margin-bottom: var(--space-30);
+  border-bottom: 1px solid #878787;
+  margin-right: var(--space-30);
+  padding-bottom: var(--space-10);
+`;
 
 export function BrowseContainer({ slides }) {
   const [category, setCategory] = useState('series');
@@ -82,7 +95,6 @@ export function BrowseContainer({ slides }) {
   return (
     <div>
       {loading ? <Loading src={profile.avatar} /> : <LoadingReleaseBody />}
-
       <Header src={profile.header.image} dontShowOnSmallViewPort>
         <HeaderFrame>
           <HeaderGroup>
@@ -119,7 +131,7 @@ export function BrowseContainer({ slides }) {
           <HeaderPlayButton>Play</HeaderPlayButton>
         </HeaderFeature>
       </Header>
-      Welcome, {profile.name}!
+      <WelcomeMessage>Welcome, {profile.name}!</WelcomeMessage>
       <CardGroup>
         {slideRows.map((slideItem) => (
           <Card key={`${category}-${slideItem.title.toLowerCase()}`}>
