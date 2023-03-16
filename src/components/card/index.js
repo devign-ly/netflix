@@ -105,6 +105,13 @@ export function CardFeature({ children, category }) {
             <FeatureText fontWeight="bold">
               {itemFeature.genre.charAt(0).toUpperCase() + itemFeature.genre.slice(1)}
             </FeatureText>
+            <Rating
+              name="simple-controlled"
+              value={3}
+              onChange={(event, newValue) => {
+                console.log('set value to ', newValue);
+              }}
+            />
           </Group>
 
           {children}
