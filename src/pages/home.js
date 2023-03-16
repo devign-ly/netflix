@@ -12,12 +12,12 @@ export default function Home() {
       <HeaderContainer showSignIn>
         <Feature>
           <FeatureTitle>Unlimited movies, TV shows, and more.</FeatureTitle>
-          <FeatureSubTitle>Watch anywhere. Cancel at any time.</FeatureSubTitle>
+
           <OptForm>
-            <OptFormInput placeholder="Email address" />
-            <OptFormButton>Try it now</OptFormButton>
-            <OptFormBreak />
             <OptFormText>Ready to watch? Enter your email to create or restart your&nbsp;membership.</OptFormText>
+            <OptFormInput placeholder="Email address" />
+            <OptFormButton>30 Day Free Trial</OptFormButton>
+            <OptFormBreak />
           </OptForm>
         </Feature>
       </HeaderContainer>
