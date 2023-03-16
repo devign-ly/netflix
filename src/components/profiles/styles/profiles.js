@@ -30,6 +30,8 @@ export const Name = styled.p`
   text-overflow: ellipsis;
   font-size: var(--text-md);
   font-family: var(--font-body);
+  white-space: nowrap;
+  overflow: hidden;
   &:hover {
     font-weight: var(--font-bold);
     color: #e5e5e5;
