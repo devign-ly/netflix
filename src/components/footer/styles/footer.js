@@ -33,12 +33,17 @@ export const Link = styled.a`
   margin-bottom: var(--space-20);
   font-size: var(--text-sm);
   text-decoration: none;
+  font-family: var(--font-body);
+  &:hover {
+    color: #c2c2c2;
+  }
 `;
 
 export const Title = styled.p`
   font-size: var(--text-md);
   color: #757575;
   margin-bottom: var(--space-40);
+  font-family: var(--font-body);
 `;
 
 export const Break = styled.div`

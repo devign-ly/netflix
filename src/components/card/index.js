@@ -17,6 +17,16 @@ import {
   Item,
   Image,
 } from './styles/card';
+import styled from 'styled-components';
+import Rating from '@mui/material/Rating';
+const Overlay = styled.div`
+  width: 100%;
+  height: 100%;
+  background-color: #97979766;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+`;
 
 export const FeatureContext = createContext();
 
@@ -80,23 +90,26 @@ export function CardFeature({ children, category }) {
   if (!showFeature) return null;
 
   return (
-    <Feature src={`/images/${category}/${itemFeature.genre}/${itemFeature.slug}/large.jpg`}>
-      <Content>
-        <FeatureTitle>{itemFeature.title}</FeatureTitle>
-        <FeatureText>{itemFeature.description}</FeatureText>
-        <FeatureClose onClick={() => setShowFeature(false)}>
-          <img src="/images/icons/close.png" alt="Close" />
-        </FeatureClose>
+    <>
+      <Overlay></Overlay>
+      <Feature src={`/images/${category}/${itemFeature.genre}/${itemFeature.slug}/large.jpg`}>
+        <Content>
+          <FeatureTitle>{itemFeature.title}</FeatureTitle>
+          <FeatureText>{itemFeature.description}</FeatureText>
+          <FeatureClose onClick={() => setShowFeature(false)}>
+            <img src="/images/icons/close.png" alt="Close" />
+          </FeatureClose>
 
-        <Group margin="30px 0" flexDirection="row" alignItems="center">
-          <Maturity rating={itemFeature.maturity}>{itemFeature.maturity < 12 ? 'PG' : itemFeature.maturity}</Maturity>
-          <FeatureText fontWeight="bold">
-            {itemFeature.genre.charAt(0).toUpperCase() + itemFeature.genre.slice(1)}
-          </FeatureText>
-        </Group>
+          <Group margin="30px 0" flexDirection="row" alignItems="center">
+            <Maturity rating={itemFeature.maturity}>{itemFeature.maturity < 12 ? 'PG' : itemFeature.maturity}</Maturity>
+            <FeatureText fontWeight="bold">
+              {itemFeature.genre.charAt(0).toUpperCase() + itemFeature.genre.slice(1)}
+            </FeatureText>
+          </Group>
 
-        {children}
-      </Content>
-    </Feature>
+          {children}
+        </Content>
+      </Feature>
+    </>
   );
 }

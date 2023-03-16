@@ -136,18 +136,19 @@ export const FeatureText = styled.p`
 export const Feature = styled.div`
   display: flex;
   flex-direction: row;
-  background: url(${({ src }) => src});
+  background: url(${({
+  src
+}) => src});
   background-size: contain;
   position: relative;
   height: 360px;
   background-position-x: right;
   background-repeat: no-repeat;
   background-color: black;
-
+  z-index: 2;
   @media (max-width: 1000px) {
     height: auto;
     background-size: auto;
-
     ${Title} {
       font-size: var(--text-lg);
       line-height: 20px;
