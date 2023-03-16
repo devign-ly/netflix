@@ -55,11 +55,33 @@ export const Help = styled.div`
 export const ChatText = styled.div`
   margin-right: 18px;
 `;
+const Picture = styled.div`
+  width: 100px;
+  background-color: #9f9f9f;
+`;
 
 export const LiveChat = () => {
   return (
     <Help>
       <img src="https://randomuser.me/api/portraits/men/28.jpg" />
+
+      <ChatText>
+        <LiveChat1>I'm here to help</LiveChat1>
+
+        <Button>Chat Now</Button>
+      </ChatText>
+    </Help>
+  );
+};
+export const LiveChatGraphical = () => {
+  return (
+    <Help>
+      <Picture>
+        <img
+          src="https://uxwing.com/wp-content/themes/uxwing/download/business-professional-services/male-services-support-icon.png"
+          width="100px"
+        />
+      </Picture>
 
       <ChatText>
         <LiveChat1>I'm here to help</LiveChat1>
