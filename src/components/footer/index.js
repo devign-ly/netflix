@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components/macro';
 import { Container, Row, Column, Link, Title, Break } from './styles/footer';
 import Button from '../button';
 
@@ -25,6 +26,33 @@ export function FooterTitle({ children }) {
 export function FooterBreak() {
   return <Break />;
 }
+
+export const LiveChat1 = styled.div`
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  color: white;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+`;
+
+export const Help = styled.div`
+  display: 'flex';
+  flex-direction: 'row';
+  gap: '10px';
+  justify-content: 'space-between';
+  width: 250px;
+  height: 100px;
+  background-color: #252525;
+  border-radius: 8px;
+`;
+
+
+export const ChatText = styled.div`
+  margin-right: 18px;
+`;
+
+
 export const LiveChat = () => {
   return (
     <Help
@@ -38,7 +66,7 @@ export const LiveChat = () => {
       <img src="https://randomuser.me/api/portraits/men/28.jpg" />
 
       <ChatText>
-        <LiveChat>I'm here to help</LiveChat>
+        <LiveChat1>I'm here to help</LiveChat1>
 
         <Button>Chat Now</Button>
       </ChatText>
