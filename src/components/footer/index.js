@@ -37,32 +37,28 @@ export const LiveChat1 = styled.div`
 `;
 
 export const Help = styled.div`
-  display: 'flex';
-  flex-direction: 'row';
-  gap: '10px';
-  justify-content: 'space-between';
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
   width: 250px;
   height: 100px;
   background-color: #252525;
   border-radius: 8px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  margin: 1em;
 `;
-
 
 export const ChatText = styled.div`
   margin-right: 18px;
 `;
 
-
 export const LiveChat = () => {
   return (
-    <Help
-      style={{
-        display: 'flex',
-        flexDirection: 'row',
-        gap: '10px',
-        justifyContent: 'space-between',
-      }}
-    >
+    <Help>
       <img src="https://randomuser.me/api/portraits/men/28.jpg" />
 
       <ChatText>

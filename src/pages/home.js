@@ -6,10 +6,12 @@ import { JumbotronContainer } from '../containers/jumbotron';
 import { FaqsContainer } from '../containers/faqs';
 import { FooterContainer } from '../containers/footer';
 import { SignUpForm } from '../components/form';
+import { LiveChat } from '../components/footer';
 
 export default function Home() {
   return (
     <div>
+      <LiveChat></LiveChat>
       <HeaderContainer showSignIn>
         <Feature>
           <FeatureTitle>Unlimited movies, TV shows, and more.</FeatureTitle>

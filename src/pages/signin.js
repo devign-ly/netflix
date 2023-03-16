@@ -7,6 +7,7 @@ import { FooterContainer } from '../containers/footer';
 import Button from '../components/button';
 import * as ROUTES from '../constants/routes';
 import users from '../data/users.json';
+import { LiveChat } from '../components/footer';
 
 export default function SignIn() {
   const history = useHistory();
@@ -36,6 +37,7 @@ export default function SignIn() {
 
   return (
     <div>
+      <LiveChat></LiveChat>
       <HeaderContainer>
         <Form>
           <FormTitle>Sign In</FormTitle>
