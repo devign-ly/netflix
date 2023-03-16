@@ -8,6 +8,7 @@ import Accordion, {
 } from '../components/accordion';
 import OptForm, { OptFormInput, OptFormButton, OptFormBreak, OptFormText } from '../components/opt-form';
 import faqsData from '../fixtures/faqs';
+import { SignUpForm } from '../components/form';
 
 export function FaqsContainer() {
   return (
@@ -22,12 +23,7 @@ export function FaqsContainer() {
         ))}
       </AccordionFrame>
 
-      <OptForm>
-        <OptFormInput placeholder="Email address" />
-        <OptFormButton>Try it now</OptFormButton>
-        <OptFormBreak />
-        <OptFormText>Ready to watch? Enter your email to create or restart your&nbsp;membership.</OptFormText>
-      </OptForm>
+      <SignUpForm></SignUpForm>
     </Accordion>
   );
 }

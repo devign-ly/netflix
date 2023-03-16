@@ -5,6 +5,7 @@ import { HeaderContainer } from '../containers/header';
 import { JumbotronContainer } from '../containers/jumbotron';
 import { FaqsContainer } from '../containers/faqs';
 import { FooterContainer } from '../containers/footer';
+import { SignUpForm } from '../components/form';
 
 export default function Home() {
   return (
@@ -13,12 +14,7 @@ export default function Home() {
         <Feature>
           <FeatureTitle>Unlimited movies, TV shows, and more.</FeatureTitle>
 
-          <OptForm>
-            <OptFormText>Ready to watch? Enter your email to create or restart your&nbsp;membership.</OptFormText>
-            <OptFormInput placeholder="Email address" />
-            <OptFormButton>30 Day Free Trial</OptFormButton>
-            <OptFormBreak />
-          </OptForm>
+          <SignUpForm></SignUpForm>
         </Feature>
       </HeaderContainer>
 

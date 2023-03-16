@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Error, Base, Title, Text, TextSmall, Link, Input } from './styles/form';
+import OptForm, { OptFormText, OptFormInput, OptFormButton, OptFormBreak } from '../opt-form';
 
 export default function Form({ children }) {
   return <Container>{children}</Container>;
@@ -40,3 +41,13 @@ export function FormInput({ type, placeholder, value, onChange, autoComplete, ch
     </Input>
   );
 }
+export const SignUpForm = () => {
+  return (
+    <OptForm>
+      <OptFormText>Are you ready to watch? Enter your email to create or restart your&nbsp;membership.</OptFormText>
+      <OptFormInput placeholder="Email address" />
+      <OptFormButton>30 Day Free Trial</OptFormButton>
+      <OptFormBreak />
+    </OptForm>
+  );
+};
