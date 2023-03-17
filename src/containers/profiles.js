@@ -21,7 +21,6 @@ export function SelectProfileContainer({ setProfile }) {
       </Header>
 
       <Profiles>
-        <ProfilesTitle>Who's watching?</ProfilesTitle>
         <ProfilesList>
           {profiles.map((profile) => (
             <ProfilesUser key={profile.name} onClick={() => setProfile(profile)} data-testid="user-profile">
@@ -30,6 +29,7 @@ export function SelectProfileContainer({ setProfile }) {
             </ProfilesUser>
           ))}
         </ProfilesList>
+        <ProfilesTitle>Who's watching now?</ProfilesTitle>
       </Profiles>
     </div>
   );
