@@ -20,7 +20,6 @@ export function SelectProfileContainer({ setProfile }) {
         </HeaderFrame>
       </Header>
 
-      <ProfilesTitle>Who's watching?</ProfilesTitle>
       <Profiles>
         <ProfilesList>
           {profiles.map((profile) => (
@@ -31,6 +30,7 @@ export function SelectProfileContainer({ setProfile }) {
           ))}
         </ProfilesList>
       </Profiles>
+      <ProfilesTitle>Who's watching now?</ProfilesTitle>
     </div>
   );
 }
