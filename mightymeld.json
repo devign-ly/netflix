@@ -8,6 +8,7 @@
   "bypass_proxy": true,
   "main_branch": "main",
   "meta_dir": "src/.mightymeld",
+  "preview_dir": "src/previews",
   "run_prettier": true,
   "prefab_dir": "src/prefab"
 }
