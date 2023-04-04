@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 const MyStyle = styled.h1`
-  color: #b6b1eb;
+  color: #e6ebb0;
   padding: 1em;
   margin: 0;
   font-family: sans-serif;
