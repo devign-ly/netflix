@@ -36,6 +36,7 @@ export default function SignIn() {
 
   return (
     <div>
+    	<span>NEW TEXT HERE</span>
       <HeaderContainer>
         <Form>
           <FormTitle>Sign In</FormTitle>
