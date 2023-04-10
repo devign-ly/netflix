@@ -16,12 +16,9 @@ export function App() {
   return (
     <Router>
       <MightyMeld.Ghostbox
-        getPhantom={async (filename) => {
-          try {
-            return await import(/* webpackInclude: /\.jsx$/ */ `./.mightymeld/${filename}`);
-          } catch (e) {
-            return () => <p style={{ color: 'red', font: '14px sans-serif', margin: 10 }}>{e.toString()}</p>;
-          }
+        getPreview={(filename) => {
+          const name = filename.replace(/\.jsx$/, '').replace(/^src\//, './');
+          return import(/* webpackInclude: /preview__[^.]+\.jsx$/ */ `${name}.jsx`);
         }}
       >
         <Switch>
