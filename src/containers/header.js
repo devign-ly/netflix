@@ -8,7 +8,7 @@ export function HeaderContainer({ showSignIn, children }) {
   return (
     <Header>
       <HeaderFrame>
-        <HeaderLogo to={ROUTES.HOME} src={logo} alt="Netflix" />
+        <HeaderLogo to={ROUTES.HOME} src={logo} alt="TubeFlix" />
         {showSignIn && (
           <Button to={ROUTES.SIGN_IN} element="link">
             Sign In

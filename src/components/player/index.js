@@ -21,7 +21,7 @@ export function PlayerVideo({ src }) {
     ? ReactDOM.createPortal(
         <Overlay onClick={() => setShowPlayer(false)} data-testid="player">
           <Inner>
-            <video id="netflix-player" controls>
+            <video id="tubeflix-player" controls>
               <source src={src} type="video/mp4" />
             </video>
             <Close />
