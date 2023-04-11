@@ -86,7 +86,7 @@ export function BrowseContainer({ slides }) {
       <Header src={profile.header.image} dontShowOnSmallViewPort>
         <HeaderFrame>
           <HeaderGroup>
-            <HeaderLogo to={ROUTES.HOME} src={logo} alt="Netflix" />
+            <HeaderLogo to={ROUTES.HOME} src={logo} alt="TubeFlix" />
             <HeaderTextLink active={category === 'series' ? 'true' : 'false'} onClick={() => setCategory('series')}>
               Series
             </HeaderTextLink>
