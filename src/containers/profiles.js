@@ -10,6 +10,8 @@ import Profiles, {
 import * as ROUTES from '../constants/routes';
 import logo from '../logo.svg';
 import profiles from '../data/profiles.json';
+import { img } from '../prefab/components/html';
+import Button from '../components/button';
 
 export function SelectProfileContainer({ setProfile }) {
   return (
@@ -21,7 +23,8 @@ export function SelectProfileContainer({ setProfile }) {
       </Header>
 
       <Profiles>
-        <ProfilesTitle>Who's watching now?</ProfilesTitle>
+        <img src="https://picsum.photos/200/300" />
+        <Button>Click Me</Button>
         <ProfilesList>
           {profiles.map((profile) => (
             <ProfilesUser key={profile.name} onClick={() => setProfile(profile)} data-testid="user-profile">
@@ -30,6 +33,7 @@ export function SelectProfileContainer({ setProfile }) {
             </ProfilesUser>
           ))}
         </ProfilesList>
+        <ProfilesTitle>Who's watching now?</ProfilesTitle>
       </Profiles>
     </div>
   );

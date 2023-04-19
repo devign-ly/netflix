@@ -16,6 +16,7 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
+  gap: 0.5em;
 `;
 
 export const Row = styled.div`
