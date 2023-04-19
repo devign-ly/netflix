@@ -40,7 +40,7 @@ export function HeaderGroup({ children }) {
 export function HeaderLogo({ to, src, alt }) {
   return (
     <ReactRouterLink to={to}>
-      <Logo src={src} alt={alt} />
+      <Logo src="https://tubeflix-app.s3.us-west-1.amazonaws.com/tubeflix.png" alt={alt} />
     </ReactRouterLink>
   );
 }

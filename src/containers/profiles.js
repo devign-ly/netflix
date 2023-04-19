@@ -18,7 +18,7 @@ export function SelectProfileContainer({ setProfile }) {
     <div>
       <Header bg={false}>
         <HeaderFrame>
-          <HeaderLogo to={ROUTES.HOME} src={logo} alt="Netflix" />
+          <HeaderLogo to={ROUTES.HOME} src={logo} alt="TubeFlix" />
         </HeaderFrame>
       </Header>
 
