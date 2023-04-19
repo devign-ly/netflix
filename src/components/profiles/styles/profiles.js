@@ -26,7 +26,7 @@ export const List = styled.ul`
 `;
 
 export const Name = styled.p`
-  color: #808080;
+  color: #a640b7;
   text-overflow: ellipsis;
   font-size: var(--text-md);
   font-family: var(--font-body);
