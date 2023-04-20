@@ -23,8 +23,8 @@ export function SelectProfileContainer({ setProfile }) {
       </Header>
 
       <Profiles>
-        <img src="https://picsum.photos/200/300" />
         <Button>Click Me</Button>
+        <img src="https://picsum.photos/200/300" />
         <ProfilesList>
           {profiles.map((profile) => (
             <ProfilesUser key={profile.name} onClick={() => setProfile(profile)} data-testid="user-profile">
