@@ -13,7 +13,7 @@ export function App() {
 
   return (
     <Router>
-      {/* @mightymeld-preview */}
+      {/* @mightymeld-viewbox */}
       <Switch>
         <IsUserRedirect user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.SIGN_IN}>
           <SignIn />
