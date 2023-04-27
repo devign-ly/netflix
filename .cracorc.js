@@ -1,5 +1,5 @@
 module.exports = {
   babel: {
-    plugins: ['babel-plugin-mightymeld'],
+    plugins: ['@mightymeld/runtime/babel-plugin-mightymeld'],
   },
 };
