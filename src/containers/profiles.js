@@ -24,37 +24,7 @@ export function SelectProfileContainer({ setProfile }) {
       </Header>
 
       <Profiles>
-        <Alert severity="warning">This is a warning alert — check it out!</Alert>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            gap: '20px',
-            justifyContent: 'space-between',
-          }}
-        >
-          <div
-            style={{
-              width: '100px',
-              height: '100px',
-              backgroundColor: '#888',
-            }}
-          />
-          <div
-            style={{
-              width: '100px',
-              height: '100px',
-              backgroundColor: '#888',
-            }}
-          />
-          <div
-            style={{
-              width: '100px',
-              height: '100px',
-              backgroundColor: '#888',
-            }}
-          />
-        </div>
+        <ProfilesTitle>Who's watching?</ProfilesTitle>
         <ProfilesList>
           {profiles.map((profile) => (
             <ProfilesUser key={profile.name} onClick={() => setProfile(profile)} data-testid="user-profile">
@@ -63,7 +33,6 @@ export function SelectProfileContainer({ setProfile }) {
             </ProfilesUser>
           ))}
         </ProfilesList>
-        <ProfilesTitle>Who's watching?</ProfilesTitle>
       </Profiles>
     </div>
   );

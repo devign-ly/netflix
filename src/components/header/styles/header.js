@@ -24,7 +24,7 @@ export const Container = styled.div`
 `;
 
 export const Link = styled.p`
-  color: #7dd5de;
+  color: #ffffff;
   text-decoration: none;
   margin-right: var(--space-30);
   font-weight: ${({
