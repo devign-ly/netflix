@@ -24,10 +24,12 @@ export const Container = styled.div`
 `;
 
 export const Link = styled.p`
-  color: #fff;
+  color: #7dd5de;
   text-decoration: none;
   margin-right: var(--space-30);
-  font-weight: ${({ active }) => (active === 'true' ? '700' : 'normal')};
+  font-weight: ${({
+  active
+}) => active === 'true' ? '700' : 'normal'};
   cursor: pointer;
   font-family: var(--font-body);
   &:hover {

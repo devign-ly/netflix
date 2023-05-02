@@ -39,7 +39,7 @@ export default function SignIn() {
       <HeaderContainer>
         <Form>
           <FormTitle>Sign In</FormTitle>
-          {error && <FormError data-testid="error">{error}</FormError>}
+          {true && <FormError data-testid="error">{'test message'}</FormError>}
 
           <FormBase onSubmit={handleSignin} method="POST">
             <FormInput
