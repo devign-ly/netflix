@@ -31,7 +31,7 @@ export const Base = styled.form`
 `;
 
 export const Title = styled.h1`
-  color: #dbdea7;
+  color: #ffffff;
   font-family: var(--font-title);
   font-size: var(--text-2xl);
   font-weight: var(--font-semibold);
