@@ -1,4 +1,4 @@
-# Devign Setup
+# MightyMeld Setup
 
 1. Check out the repo.
 2. `yarn`
