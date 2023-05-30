@@ -1589,10 +1589,10 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
-"@mightymeld/runtime@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@mightymeld/runtime/-/runtime-0.1.1.tgz#9078e5c3fbefd5e7095c7e813de1e2103bb5c4b2"
-  integrity sha512-s/WBshdR+TxO3AVJjTBW+XNaXlsQPDjhMFHiO1Rqx0LomafcedgNpPkYYmgcIxc0wur9kUT4zccuYxUIgi8k4w==
+"@mightymeld/runtime@^0.1.9":
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/@mightymeld/runtime/-/runtime-0.1.9.tgz#acec8096d855838210ba18e6991cee43d759026f"
+  integrity sha512-M8AN0AdFiS9jvK0ODQcvkWAZUb0z7hKpm163q7WKq0P/GdsZb9skXzHYj5ANRNkOOvvBd3LYIJ5hi28wjxehzg==
 
 "@mui/base@5.0.0-alpha.118":
   version "5.0.0-alpha.118"
