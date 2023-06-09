@@ -1,15 +1,15 @@
-import React from 'react';
-import Header, { HeaderFrame, HeaderLogo } from '../components/header';
+import React from "react";
+import Header, { HeaderFrame, HeaderLogo } from "../components/header";
 import Profiles, {
   ProfilesTitle,
   ProfilesList,
   ProfilesUser,
   ProfilesPicture,
   ProfilesName,
-} from '../components/profiles';
-import * as ROUTES from '../constants/routes';
-import logo from '../logo.svg';
-import profiles from '../data/profiles.json';
+} from "../components/profiles";
+import * as ROUTES from "../constants/routes";
+import logo from "../logo.svg";
+import profiles from "../data/profiles.json";
 
 export function SelectProfileContainer({ setProfile }) {
   return (
@@ -24,9 +24,13 @@ export function SelectProfileContainer({ setProfile }) {
         <ProfilesTitle>Who's watching?</ProfilesTitle>
         <ProfilesList>
           {profiles.map((profile) => (
-            <ProfilesUser key={profile.name} onClick={() => setProfile(profile)} data-testid="user-profile">
-              <ProfilesPicture src={profile.avatar} />
+            <ProfilesUser
+              key={profile.name}
+              onClick={() => setProfile(profile)}
+              data-testid="user-profile"
+            >
               <ProfilesName>{profile.name}</ProfilesName>
+              <ProfilesPicture src={profile.avatar} />
             </ProfilesUser>
           ))}
         </ProfilesList>
