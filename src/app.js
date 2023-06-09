@@ -1,6 +1,4 @@
 import React from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
-import * as MightyMeld from 'mightymeld';
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import Home from './pages/home';
 import Browse from './pages/browse';
@@ -15,24 +13,18 @@ export function App() {
 
   return (
     <Router>
-      <MightyMeld.Ghostbox
-        getPreview={(filename) => {
-          const name = filename.replace(/\.jsx$/, '').replace(/^src\//, './');
-          return import(/* webpackInclude: /preview__[^.]+\.jsx$/ */ `${name}.jsx`);
-        }}
-      >
-        <Switch>
-          <IsUserRedirect user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.SIGN_IN}>
-            <SignIn />
-          </IsUserRedirect>
-          <ProtectedRoute user={user} path={ROUTES.BROWSE}>
-            <Browse />
-          </ProtectedRoute>
-          <IsUserRedirect user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.HOME}>
-            <Home />
-          </IsUserRedirect>
-        </Switch>
-      </MightyMeld.Ghostbox>
+      {/* @mightymeld-viewbox */}
+      <Switch>
+        <IsUserRedirect user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.SIGN_IN}>
+          <SignIn />
+        </IsUserRedirect>
+        <ProtectedRoute user={user} path={ROUTES.BROWSE}>
+          <Browse />
+        </ProtectedRoute>
+        <IsUserRedirect user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.HOME}>
+          <Home />
+        </IsUserRedirect>
+      </Switch>
     </Router>
   );
 }

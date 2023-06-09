@@ -1,42 +1,41 @@
-import Alert from '@mui/material/Alert';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Autocomplete from '@mui/material/Autocomplete';
-import TextField from '@mui/material/TextField';
-import Backdrop from '@mui/material/Backdrop';
-import CircularProgress from '@mui/material/CircularProgress';
-import Box from '@mui/material/Box';
-import Breadcrumbs from '@mui/material/Breadcrumbs';
-import Link from '@mui/material/Link';
-import Typography from '@mui/material/Typography';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Container from '@mui/material/Container';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import DialogTitle from '@mui/material/DialogTitle';
-import Fab from '@mui/material/Fab';
-import Dialog from '@mui/material/Dialog';
-import Paper from '@mui/material/Paper';
-import PersonIcon from '@mui/icons-material/Person';
-import AddIcon from '@mui/icons-material/Add';
-import { blue } from '@mui/material/colors';
-import NavigationIcon from '@mui/icons-material/Navigation';
-import Grid from '@mui/material/Grid';
-import Rating from '@mui/material/Rating';
-import Switch from '@mui/material/Switch';
+import Alert from '@mui/material/Alert'
+import Avatar from '@mui/material/Avatar'
+import Button from '@mui/material/Button'
+import Autocomplete from '@mui/material/Autocomplete'
+import TextField from '@mui/material/TextField'
+import Backdrop from '@mui/material/Backdrop'
+import CircularProgress from '@mui/material/CircularProgress'
+import Box from '@mui/material/Box'
+import Breadcrumbs from '@mui/material/Breadcrumbs'
+import Link from '@mui/material/Link'
+import Typography from '@mui/material/Typography'
+import Card from '@mui/material/Card'
+import CardActions from '@mui/material/CardActions'
+import CardContent from '@mui/material/CardContent'
+import Container from '@mui/material/Container'
+import List from '@mui/material/List'
+import ListItem from '@mui/material/ListItem'
+import ListItemAvatar from '@mui/material/ListItemAvatar'
+import ImageList from '@mui/material/ImageList'
+import ImageListItem from '@mui/material/ImageListItem'
+import ListItemButton from '@mui/material/ListItemButton'
+import ListItemText from '@mui/material/ListItemText'
+import DialogTitle from '@mui/material/DialogTitle'
+import Fab from '@mui/material/Fab'
+import Dialog from '@mui/material/Dialog'
+import Paper from '@mui/material/Paper'
+import PersonIcon from '@mui/icons-material/Person'
+import AddIcon from '@mui/icons-material/Add'
+import NavigationIcon from '@mui/icons-material/Navigation'
+import Grid from '@mui/material/Grid'
+import Rating from '@mui/material/Rating'
+import Switch from '@mui/material/Switch'
 
-export function alert() {
-  return <Alert severity="warning">This is a warning alert — check it out!</Alert>;
+export function _Alert() {
+  return <Alert severity="warning">This is a warning alert — check it out!</Alert>
 }
 
-export function autocomplete() {
+export function _Autocomplete() {
   return (
     <Autocomplete
       id="free-solo-demo"
@@ -52,30 +51,30 @@ export function autocomplete() {
         />
       )}
     />
-  );
+  )
 }
 
-export function avatarImage() {
-  return <Avatar alt="Jay Doe" src="https://randomuser.me/api/portraits/lego/5.jpg" />;
+export function _Avatar_image() {
+  return <Avatar alt="Jay Doe" src="https://randomuser.me/api/portraits/lego/5.jpg" />
 }
 
-export function avatarLetter() {
-  return <Avatar sx={{ bgcolor: 'orange' }}>N</Avatar>;
+export function _Avatar_letter() {
+  return <Avatar sx={{ bgcolor: 'orange' }}>N</Avatar>
 }
 
-export function backdrop() {
+export function _Backdrop() {
   return (
     <Backdrop
       sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
       open={true}
-      onClick={console.log('close backdrop')}
+      onClick={() => console.log('close backdrop')}
     >
       <CircularProgress color="inherit" />
     </Backdrop>
-  );
+  )
 }
 
-export function box() {
+export function _Box() {
   return (
     <Box
       sx={{
@@ -84,32 +83,36 @@ export function box() {
         backgroundColor: 'primary.dark',
         '&:hover': {
           backgroundColor: 'primary.main',
-          opacity: [0.9, 0.8, 0.7],
-        },
+          opacity: [0.9, 0.8, 0.7]
+        }
       }}
     />
-  );
+  )
 }
 
-export function breadcrumbs() {
+export function _Breadcrumbs() {
   return (
     <Breadcrumbs aria-label="breadcrumb">
       <Link underline="hover" color="inherit" href="https://mui.com/">
         MUI
       </Link>
-      <Link underline="hover" color="inherit" href="https://mui.com//material-ui/getting-started/installation/">
+      <Link
+        underline="hover"
+        color="inherit"
+        href="https://mui.com//material-ui/getting-started/installation/"
+      >
         Core
       </Link>
       <Typography color="text.primary">Breadcrumbs</Typography>
     </Breadcrumbs>
-  );
+  )
 }
 
-export function button() {
-  return <Button variant="contained">Hello World</Button>;
+export function _Button() {
+  return <Button variant="contained">Hello World</Button>
 }
 
-export function card() {
+export function _Card() {
   return (
     <Card sx={{ minWidth: 275 }}>
       <CardContent>
@@ -118,15 +121,24 @@ export function card() {
         </Typography>
         <Typography variant="h5" component="div">
           be
-          <Box component="span" sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}>
+          <Box
+            component="span"
+            sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
+          >
             •
           </Box>
           nev{' '}
-          <Box component="span" sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}>
+          <Box
+            component="span"
+            sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
+          >
             •
           </Box>
           o{' '}
-          <Box component="span" sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}>
+          <Box
+            component="span"
+            sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
+          >
             •
           </Box>
           lent
@@ -144,20 +156,20 @@ export function card() {
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
-  );
+  )
 }
 
-export function container() {
+export function _Container() {
   return (
     <Container maxWidth="sm">
       <Box sx={{ bgcolor: '#cfe8fc', height: '260px' }} />
     </Container>
-  );
+  )
 }
 
-export function dialog() {
+export function _Dialog() {
   return (
-    <Dialog onClose={console.log('clicked close')} open={true}>
+    <Dialog onClose={() => console.log('clicked close')} open={true}>
       <DialogTitle>Set backup account</DialogTitle>
       <List sx={{ pt: 0 }}>
         {['username@gmail.com', 'user02@gmail.com'].map((email) => (
@@ -184,19 +196,19 @@ export function dialog() {
         </ListItem>
       </List>
     </Dialog>
-  );
+  )
 }
 
-export function fab() {
+export function _Fab() {
   return (
     <Fab variant="extended">
       <NavigationIcon sx={{ mr: 1 }} />
       Navigate
     </Fab>
-  );
+  )
 }
 
-export function grid() {
+export function _Grid() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
@@ -214,10 +226,10 @@ export function grid() {
         </Grid>
       </Grid>
     </Box>
-  );
+  )
 }
 
-export function imageList() {
+export function _ImageList() {
   return (
     <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
       <ImageListItem>
@@ -293,10 +305,10 @@ export function imageList() {
         />
       </ImageListItem>
     </ImageList>
-  );
+  )
 }
 
-export function paper() {
+export function _Paper() {
   return (
     <Box
       sx={{
@@ -305,39 +317,39 @@ export function paper() {
         '& > :not(style)': {
           m: 1,
           width: 128,
-          height: 128,
-        },
+          height: 128
+        }
       }}
     >
       <Paper elevation={3} />
     </Box>
-  );
+  )
 }
 
-export function progress() {
+export function _CircularProgress() {
   return (
     <Box sx={{ display: 'flex' }}>
       <CircularProgress />
     </Box>
-  );
+  )
 }
 
-export function rating() {
+export function _Rating() {
   return (
     <Rating
       name="simple-controlled"
       value={3}
       onChange={(event, newValue) => {
-        console.log('set value to ', newValue);
+        console.log('set value to ', newValue)
       }}
     />
-  );
+  )
 }
 
-export function switch_() {
-  return <Switch aria-label="Switch demo" defaultChecked />;
+export function _Switch() {
+  return <Switch aria-label="Switch demo" defaultChecked />
 }
 
-export function textField() {
-  return <TextField id="outlined-basic" label="Outlined" variant="outlined" />;
+export function _TextField() {
+  return <TextField id="outlined-basic" label="Outlined" variant="outlined" />
 }
