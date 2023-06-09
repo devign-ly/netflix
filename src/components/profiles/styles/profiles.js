@@ -11,7 +11,7 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
   width: 100%;
-  color: #e3ea8f;
+  color: #fff;
   font-family: var(--font-title);
   font-size: var(--text-3xl);
   text-align: center;
@@ -32,7 +32,7 @@ export const Name = styled.p`
   font-family: var(--font-body);
   &:hover {
     font-weight: var(--font-bold);
-    color: #00ff30;
+    color: #e5e5e5;
   }
 `;
 
