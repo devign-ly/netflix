@@ -11,9 +11,9 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
   width: 100%;
-  color: #fff;
+  color: #f48b8b;
   font-family: var(--font-title);
-  font-size: var(--text-3xl);
+  font-size: var(--text-4xl);
   text-align: center;
   font-weight: var(--font-semibold);
 `;
@@ -38,7 +38,7 @@ export const Name = styled.p`
 
 export const Picture = styled.img`
   width: 100%;
-  max-width: 150px;
+  max-width: 50px;
   height: auto;
   border: 3px solid black;
   cursor: pointer;
