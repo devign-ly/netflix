@@ -1,38 +1,38 @@
-import Alert from '@mui/material/Alert'
-import Avatar from '@mui/material/Avatar'
-import Button from '@mui/material/Button'
-import Autocomplete from '@mui/material/Autocomplete'
-import TextField from '@mui/material/TextField'
-import Backdrop from '@mui/material/Backdrop'
-import CircularProgress from '@mui/material/CircularProgress'
-import Box from '@mui/material/Box'
-import Breadcrumbs from '@mui/material/Breadcrumbs'
-import Link from '@mui/material/Link'
-import Typography from '@mui/material/Typography'
-import Card from '@mui/material/Card'
-import CardActions from '@mui/material/CardActions'
-import CardContent from '@mui/material/CardContent'
-import Container from '@mui/material/Container'
-import List from '@mui/material/List'
-import ListItem from '@mui/material/ListItem'
-import ListItemAvatar from '@mui/material/ListItemAvatar'
-import ImageList from '@mui/material/ImageList'
-import ImageListItem from '@mui/material/ImageListItem'
-import ListItemButton from '@mui/material/ListItemButton'
-import ListItemText from '@mui/material/ListItemText'
-import DialogTitle from '@mui/material/DialogTitle'
-import Fab from '@mui/material/Fab'
-import Dialog from '@mui/material/Dialog'
-import Paper from '@mui/material/Paper'
-import PersonIcon from '@mui/icons-material/Person'
-import AddIcon from '@mui/icons-material/Add'
-import NavigationIcon from '@mui/icons-material/Navigation'
-import Grid from '@mui/material/Grid'
-import Rating from '@mui/material/Rating'
-import Switch from '@mui/material/Switch'
+import Alert from '@mui/material/Alert';
+import Avatar from '@mui/material/Avatar';
+import Button from '@mui/material/Button';
+import Autocomplete from '@mui/material/Autocomplete';
+import TextField from '@mui/material/TextField';
+import Backdrop from '@mui/material/Backdrop';
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
+import Breadcrumbs from '@mui/material/Breadcrumbs';
+import Link from '@mui/material/Link';
+import Typography from '@mui/material/Typography';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Container from '@mui/material/Container';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemAvatar from '@mui/material/ListItemAvatar';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemText from '@mui/material/ListItemText';
+import DialogTitle from '@mui/material/DialogTitle';
+import Fab from '@mui/material/Fab';
+import Dialog from '@mui/material/Dialog';
+import Paper from '@mui/material/Paper';
+import PersonIcon from '@mui/icons-material/Person';
+import AddIcon from '@mui/icons-material/Add';
+import NavigationIcon from '@mui/icons-material/Navigation';
+import Grid from '@mui/material/Grid';
+import Rating from '@mui/material/Rating';
+import Switch from '@mui/material/Switch';
 
 export function _Alert() {
-  return <Alert severity="warning">This is a warning alert — check it out!</Alert>
+  return <Alert severity="warning">This is a warning alert — check it out!</Alert>;
 }
 
 export function _Autocomplete() {
@@ -51,15 +51,15 @@ export function _Autocomplete() {
         />
       )}
     />
-  )
+  );
 }
 
 export function _Avatar_image() {
-  return <Avatar alt="Jay Doe" src="https://randomuser.me/api/portraits/lego/5.jpg" />
+  return <Avatar alt="Jay Doe" src="https://randomuser.me/api/portraits/lego/5.jpg" />;
 }
 
 export function _Avatar_letter() {
-  return <Avatar sx={{ bgcolor: 'orange' }}>N</Avatar>
+  return <Avatar sx={{ bgcolor: 'orange' }}>N</Avatar>;
 }
 
 export function _Backdrop() {
@@ -71,7 +71,7 @@ export function _Backdrop() {
     >
       <CircularProgress color="inherit" />
     </Backdrop>
-  )
+  );
 }
 
 export function _Box() {
@@ -83,11 +83,11 @@ export function _Box() {
         backgroundColor: 'primary.dark',
         '&:hover': {
           backgroundColor: 'primary.main',
-          opacity: [0.9, 0.8, 0.7]
-        }
+          opacity: [0.9, 0.8, 0.7],
+        },
       }}
     />
-  )
+  );
 }
 
 export function _Breadcrumbs() {
@@ -96,20 +96,16 @@ export function _Breadcrumbs() {
       <Link underline="hover" color="inherit" href="https://mui.com/">
         MUI
       </Link>
-      <Link
-        underline="hover"
-        color="inherit"
-        href="https://mui.com//material-ui/getting-started/installation/"
-      >
+      <Link underline="hover" color="inherit" href="https://mui.com//material-ui/getting-started/installation/">
         Core
       </Link>
       <Typography color="text.primary">Breadcrumbs</Typography>
     </Breadcrumbs>
-  )
+  );
 }
 
 export function _Button() {
-  return <Button variant="contained">Hello World</Button>
+  return <Button variant="contained">Hello World</Button>;
 }
 
 export function _Card() {
@@ -121,24 +117,15 @@ export function _Card() {
         </Typography>
         <Typography variant="h5" component="div">
           be
-          <Box
-            component="span"
-            sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-          >
+          <Box component="span" sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}>
             •
           </Box>
           nev{' '}
-          <Box
-            component="span"
-            sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-          >
+          <Box component="span" sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}>
             •
           </Box>
           o{' '}
-          <Box
-            component="span"
-            sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-          >
+          <Box component="span" sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}>
             •
           </Box>
           lent
@@ -156,7 +143,7 @@ export function _Card() {
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
-  )
+  );
 }
 
 export function _Container() {
@@ -164,7 +151,7 @@ export function _Container() {
     <Container maxWidth="sm">
       <Box sx={{ bgcolor: '#cfe8fc', height: '260px' }} />
     </Container>
-  )
+  );
 }
 
 export function _Dialog() {
@@ -196,7 +183,7 @@ export function _Dialog() {
         </ListItem>
       </List>
     </Dialog>
-  )
+  );
 }
 
 export function _Fab() {
@@ -205,7 +192,7 @@ export function _Fab() {
       <NavigationIcon sx={{ mr: 1 }} />
       Navigate
     </Fab>
-  )
+  );
 }
 
 export function _Grid() {
@@ -226,7 +213,7 @@ export function _Grid() {
         </Grid>
       </Grid>
     </Box>
-  )
+  );
 }
 
 export function _ImageList() {
@@ -305,7 +292,7 @@ export function _ImageList() {
         />
       </ImageListItem>
     </ImageList>
-  )
+  );
 }
 
 export function _Paper() {
@@ -317,13 +304,13 @@ export function _Paper() {
         '& > :not(style)': {
           m: 1,
           width: 128,
-          height: 128
-        }
+          height: 128,
+        },
       }}
     >
       <Paper elevation={3} />
     </Box>
-  )
+  );
 }
 
 export function _CircularProgress() {
@@ -331,7 +318,7 @@ export function _CircularProgress() {
     <Box sx={{ display: 'flex' }}>
       <CircularProgress />
     </Box>
-  )
+  );
 }
 
 export function _Rating() {
@@ -340,16 +327,16 @@ export function _Rating() {
       name="simple-controlled"
       value={3}
       onChange={(event, newValue) => {
-        console.log('set value to ', newValue)
+        console.log('set value to ', newValue);
       }}
     />
-  )
+  );
 }
 
 export function _Switch() {
-  return <Switch aria-label="Switch demo" defaultChecked />
+  return <Switch aria-label="Switch demo" defaultChecked />;
 }
 
 export function _TextField() {
-  return <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+  return <TextField id="outlined-basic" label="Outlined" variant="outlined" />;
 }
