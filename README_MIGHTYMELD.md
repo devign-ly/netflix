@@ -2,7 +2,8 @@
 
 1. Check out the repo.
 2. `yarn`
-3. Start via runner: `./runner.sh -u ../user-servers/netflix`
+3. Rename `.env.template` to `.env`, and add your MM instance ID.
+4. Start with `npx mightymeld`
 
 # Babel plugin and devigner development
 
