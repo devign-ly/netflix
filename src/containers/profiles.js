@@ -10,6 +10,7 @@ import Profiles, {
 import * as ROUTES from '../constants/routes';
 import logo from '../logo.svg';
 import profiles from '../data/profiles.json';
+import Alert from '@mui/material/Alert';
 
 export function SelectProfileContainer({ setProfile }) {
   return (
@@ -21,7 +22,7 @@ export function SelectProfileContainer({ setProfile }) {
       </Header>
 
       <Profiles>
-        <ProfilesTitle>Who's watching?</ProfilesTitle>
+        <Alert severity="success">This is a warning alert — check it out!</Alert>
         <ProfilesList>
           {profiles.map((profile) => (
             <ProfilesUser key={profile.name} onClick={() => setProfile(profile)} data-testid="user-profile">
@@ -30,6 +31,7 @@ export function SelectProfileContainer({ setProfile }) {
             </ProfilesUser>
           ))}
         </ProfilesList>
+        <ProfilesTitle>Who's watching now?</ProfilesTitle>
       </Profiles>
     </div>
   );
