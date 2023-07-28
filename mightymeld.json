@@ -10,5 +10,6 @@
   "meta_dir": "src/.mightymeld",
   "view_dir": "src/previews",
   "run_prettier": true,
+  "generative_enabled": true,
   "prefab_dir": "src/prefab"
 }
