@@ -123,7 +123,6 @@ export function BrowseContainer({ slides }) {
       <CardGroup>
         {slideRows.map((slideItem) => (
           <Card key={`${category}-${slideItem.title.toLowerCase()}`}>
-            <CardTitle>{slideItem.title}</CardTitle>
             <CardEntities>
               {slideItem.data.map((item) => (
                 <CardItem key={item.id} item={item}>
