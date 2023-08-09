@@ -33,6 +33,7 @@ import { AuthContext } from '../context/auth';
 import { SelectProfileContainer } from './profiles';
 import { FooterContainer } from './footer';
 import profiles from '../data/profiles.json';
+import Alert from '@mui/material/Alert';
 
 export function BrowseContainer({ slides }) {
   const [category, setCategory] = useState('series');
@@ -93,6 +94,7 @@ export function BrowseContainer({ slides }) {
             <HeaderTextLink active={category === 'films' ? 'true' : 'false'} onClick={() => setCategory('films')}>
               Films
             </HeaderTextLink>
+            <Alert severity="warning">This is a warning alert — check it out!</Alert>
           </HeaderGroup>
           <HeaderGroup>
             <HeaderSearch searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
@@ -123,7 +125,6 @@ export function BrowseContainer({ slides }) {
       <CardGroup>
         {slideRows.map((slideItem) => (
           <Card key={`${category}-${slideItem.title.toLowerCase()}`}>
-            <CardTitle>{slideItem.title}</CardTitle>
             <CardEntities>
               {slideItem.data.map((item) => (
                 <CardItem key={item.id} item={item}>
@@ -135,6 +136,7 @@ export function BrowseContainer({ slides }) {
                 </CardItem>
               ))}
             </CardEntities>
+            <CardTitle>{slideItem.title}</CardTitle>
             <CardFeature category={category}>
               <Player>
                 <PlayerButton />
