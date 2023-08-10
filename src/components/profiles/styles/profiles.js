@@ -11,11 +11,12 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
   width: 100%;
-  color: #fff;
+  color: #ec9999;
   font-family: var(--font-title);
-  font-size: var(--text-3xl);
+  font-size: 50px;
   text-align: center;
   font-weight: var(--font-semibold);
+  background: #63708d;
 `;
 
 export const List = styled.ul`
