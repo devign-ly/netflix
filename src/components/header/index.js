@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link as ReactRouterLink } from 'react-router-dom';
 import {
   Container,
@@ -17,6 +17,12 @@ import {
   Feature,
   Logo,
 } from './styles/header';
+import styled from 'styled-components';
+const Dimensions = styled.div`
+  color: #b6b1eb;
+  height: 30px;
+  width: 100%;
+`;
 
 export default function Header({ src, dontShowOnSmallViewPort, bg = true, children }) {
   if (bg) {
@@ -30,7 +36,27 @@ export default function Header({ src, dontShowOnSmallViewPort, bg = true, childr
 }
 
 export function HeaderFrame({ children }) {
-  return <Container>{children}</Container>;
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
+  const setWindowDimensions = () => {
+    setWindowWidth(window.innerWidth);
+    setWindowHeight(window.innerHeight);
+  };
+  useEffect(() => {
+    window.addEventListener('resize', setWindowDimensions);
+    return () => {
+      window.removeEventListener('resize', setWindowDimensions);
+    };
+  }, []);
+
+  return (
+    <Container>
+      <Dimensions>
+        {windowWidth}&nbsp;x&nbsp;{windowHeight}
+      </Dimensions>
+      {children}
+    </Container>
+  );
 }
 
 export function HeaderGroup({ children }) {
