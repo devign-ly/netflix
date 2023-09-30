@@ -11,6 +11,7 @@ import * as ROUTES from '../constants/routes';
 import logo from '../logo.svg';
 import profiles from '../data/profiles.json';
 import { ProfilesTitle2 } from '../components/profiles/new-component';
+import { ProfilesTitle2 as ProfilesTitle21 } from '../components/profiles/new-component2';
 
 export function SelectProfileContainer({ setProfile }) {
   return (
@@ -23,6 +24,7 @@ export function SelectProfileContainer({ setProfile }) {
 
       <Profiles>
         <ProfilesTitle2></ProfilesTitle2>
+        <ProfilesTitle21></ProfilesTitle21>
         <ProfilesTitle>Who's watching?</ProfilesTitle>
         <ProfilesList>
           {profiles.map((profile) => (
