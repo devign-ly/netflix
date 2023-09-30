@@ -10,6 +10,7 @@ import Profiles, {
 import * as ROUTES from '../constants/routes';
 import logo from '../logo.svg';
 import profiles from '../data/profiles.json';
+import { ProfilesTitle2 } from '../components/profiles/new-component';
 
 export function SelectProfileContainer({ setProfile }) {
   return (
@@ -21,6 +22,7 @@ export function SelectProfileContainer({ setProfile }) {
       </Header>
 
       <Profiles>
+        <ProfilesTitle2></ProfilesTitle2>
         <ProfilesTitle>Who's watching?</ProfilesTitle>
         <ProfilesList>
           {profiles.map((profile) => (
