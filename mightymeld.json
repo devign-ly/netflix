@@ -1,5 +1,4 @@
 {
-	"editor": "url:vscode://file/%FILENAME:%LINE:%COLUMN",
 	"open_studio": true,
 	"include": ["src", ".prettierrc.json"],
 	"exclude": ["__tests__", "node_modules"],

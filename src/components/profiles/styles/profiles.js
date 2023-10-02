@@ -15,7 +15,7 @@ export const Title = styled.h1`
   font-family: var(--font-title);
   font-size: var(--text-3xl);
   text-align: center;
-  font-weight: var(--font-semibold);
+  font-family: var(--font-semibold);
 `;
 
 export const List = styled.ul`
