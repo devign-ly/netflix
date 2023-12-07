@@ -18,7 +18,7 @@
     "styled-components": "^5.1.1"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider craco start",
     "build": "craco build",
     "test": "craco test --coverage --watchAll",
     "lint": "eslint src --ignore-pattern __tests__",
