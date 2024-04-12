@@ -7,7 +7,6 @@ import * as ROUTES from './constants/routes';
 import { IsUserRedirect, ProtectedRoute } from './helpers/routes';
 import { useAuthListener } from './hooks';
 import './tokens.css';
-import '@mightymeld/runtime/mightymeld';
 
 export function App() {
   const { user } = useAuthListener();
