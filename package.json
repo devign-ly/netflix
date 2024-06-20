@@ -9,6 +9,8 @@
     "@mui/icons-material": "^5.11.9",
     "@mui/material": "^5.11.10",
     "fuse.js": "^6.4.1",
+    "global": "^4.4.0",
+    "mightymeld": "^0.2.2",
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

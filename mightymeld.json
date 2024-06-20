@@ -12,5 +12,7 @@
   "view_dir": "src/previews",
   "run_prettier": true,
   "generative_enabled": true,
-  "prefab_dir": "src/prefab"
+  "editor": "url:cursor://file/%FILENAME:%LINE:%COLUMN",
+  "prefab_dir": "src/prefab",
+  "component_ai": true
 }
